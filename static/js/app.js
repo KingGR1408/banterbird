@@ -33,6 +33,7 @@ async function submitPost() {
 
 window.onload = async () => {
   try {
+    document.getElementById("username").innerText;
     const response = await fetch("/api/posts");
     const posts = await response.json();
     posts.forEach((post) => renderPost(post));

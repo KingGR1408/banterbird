@@ -2,9 +2,24 @@
 
 body {
     font-family: sans-serif;
-    background-color: #0c1ab5;
+    background-color: #5e3cb5;
+    color: black;
     padding: 20px;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+p {
+    border-style: dotted solid;
+  }
+  
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
 
 #feed {
     margin-top: 30px;
